@@ -2,6 +2,7 @@
  - name: install maven
    hosts: webservers
    tasks:
-     - apt: apt-update  
+     - command: apt update
+     - apt:
         name: maven
         state: present
